@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.tvt.dethi">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -19,18 +19,17 @@
             </intent-filter>
         </activity>
 
-       <service android:name=".service.SongService"
-           android:enabled="true"
-           android:exported="true">
-
-       </service>
-
-        <receiver android:name=".receiver.SongBroadcastReceiver"
+        <service
+            android:name=".service.SongService"
             android:enabled="true"
-            android:exported="true">
+            android:exported="true"></service>
 
-        </receiver>
+        <receiver
+            android:name=".receiver.SongBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true"></receiver>
 
+        <activity android:name=".activities.Main2Activity"></activity>
     </application>
 
 </manifest>
