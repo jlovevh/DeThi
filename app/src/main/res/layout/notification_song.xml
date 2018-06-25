@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="128dp"
+    android:orientation="horizontal"
+    android:id="@+id/notifi">
+
+
+    <ImageView
+        android:id="@+id/notifi_img"
+        android:layout_width="128dp"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/default_album_art"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#414141"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/notifi_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Giấc mơ em chờ"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+
+            android:textColor="@android:color/holo_blue_dark"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:id="@+id/notifi_artist"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:textSize="16sp"
+            android:layout_height="wrap_content"
+            android:text="Chi Dân"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/notifi_pause"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_pause_white_48dp"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
